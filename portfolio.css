@@ -40,11 +40,12 @@ a{
     box-shadow: 10px  black;
     text-decoration: none;
     z-index: 2;
+    transition:transform  0.4s ease, box-shadow 0.1s ease ;
 }
 
 a:hover{
-    background: rgb(160, 45, 255);
-    z-index: 1;
+    box-shadow:2px 2px 2px  rgb(195, 45, 255);
+    transform: translateY(2px) translateZ(4px);
 }
 .photo1{
     color: white;
