@@ -74,54 +74,11 @@ a:hover{
     width: 97%;
     height:77%;
 }
-.presentation h1:nth-child(1){
-    color: white;
-}
+.presentation h1{
+    position: relative;
+    background: linear-gradient(to right,rgb(183, 0, 255),rgb(183, 0, 255),rgb(225, 0, 255));
+    color: transparent;
+    background-clip:text ;
+    font-weight: bold;
 
-.presentation span:nth-child(1){
-    color: rgb(183, 0, 255);
-}
-
-
-.presentation span:nth-child(2){
-    color: rgb(183, 0, 255);
-}
-
-.presentation span:nth-child(3){
-    color: rgb(183, 0, 255);
-}
-.presentation span:nth-child(4){
-    color: rgb(183, 0, 255);
-}
-
-.presentation span:nth-child(5){
-    color: rgb(204, 0, 255);
-}
-.presentation span:nth-child(6){
-    color: rgb(225, 0, 255);
-}
-.presentation span:nth-child(7){
-    color: rgb(225, 0, 255);
-}
-.presentation span:nth-child(8){
-    color: rgb(225, 0, 255);
-}
-.presentation span:nth-child(9){
-    color: rgb(225, 0, 255);
-}
-.presentation span:nth-child(10){
-    color: rgb(225, 0, 255);
-}
-.presentation span:nth-child(11){
-    color: rgb(225, 0, 255);
-}
-.presentation span:nth-child(12){
-    color: rgb(247, 0, 255);
-}
-.presentation span:nth-child(13){
-    color: rgb(255, 0, 242);
-}
-
-.presentation span:nth-child(14){
-    color: rgb(255, 0, 157);
 }
