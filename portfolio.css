@@ -2,6 +2,7 @@ body{
     overflow: auto;
     background:black;
     margin: 0;
+    width: 100%;
 }
 .icone img{
     border: 2px solid black;
@@ -127,8 +128,8 @@ button img{
 }
 
 /* Styles pour mobile */
-@media (max-width: 480px) {
+@media (max-width: 100%) {
     body {
-        font-size: 14px;
+        width: 100%;
     }
 }
