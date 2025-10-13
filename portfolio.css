@@ -15,7 +15,7 @@ body{
     overflow: hidden;
     padding: 30px;
     position: relative;
-    background: rgb(10, 8, 8);
+    background: rgb(17, 15, 15);
     float: right;
     display: flex;
     flex-direction: row;
@@ -23,12 +23,16 @@ body{
     height: 30px;
     width: 100%;
     padding-right: 20px;
-    gap:60%;
+    gap:50%;
 }
 .boutton1{
+    display: flex;
+    width:860px;
+    margin: 0;
     overflow: auto;
     background: rgb(17, 11, 11);
     float:right;
+    gap: 17px;
     z-index: 1;
 }
 a{
@@ -47,6 +51,11 @@ a:hover{
     box-shadow:2px 2px 2px  rgb(195, 45, 255);
     transform: translateY(2px) translateZ(4px);
 }
+.name{
+    background-color: rgb(195, 45, 255);
+    background-clip:text;
+    color: transparent;
+}
 .photo1{
     color: white;
     position: relative;
@@ -55,7 +64,7 @@ a:hover{
     height: 500px;
     margin:0;
     padding: 20px;
-     overflow: auto;
+    overflow: auto;
     float: right;
     display: flex;
     flex-direction: row;
@@ -81,4 +90,13 @@ a:hover{
     background-clip:text ;
     font-weight: bold;
 
+}
+/*mise en forme du boutton appel*/
+span button{
+    margin: 0;
+    height: 30px;
+    border-radius: 50px;
+    background-color:rgb(183, 0, 255);
+    color: aliceblue;
+    
 }
