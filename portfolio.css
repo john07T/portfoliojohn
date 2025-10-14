@@ -1,194 +1,123 @@
-/* -------------------- CONFIG GLOBALE -------------------- */
-body {
-    overflow: auto;
-    background: black;
-    margin: 0;
-    font-family: sans-serif;
-}
-
-/* -------------------- ICONE -------------------- */
-.icone img {
-    border: 2px solid black;
-    height: 40vh;        /* s’adapte à la hauteur de l’écran */
-    width: 40vw;         /* s’adapte à la largeur de l’écran */
-    border-radius: 50%;
-    object-fit: cover;   /* évite les déformations de l’image */
-    max-width: 300px;    /* limite la taille sur grands écrans */
-    min-width: 150px;    /* garde une taille mini sur petits écrans */
-}
-
-/* -------------------- BARRE DE MENU -------------------- */
-.boutton {
-    justify-content: space-between;
-    overflow: hidden;
+body{
+     overflow: auto;
+      background:black; 
+      margin: 0; 
+    } 
+.icone img{
+     border: 2px solid black;
+      height: 50vh;
+       width:50vw; 
+       border-radius: 50%;
+} 
+.boutton{ 
+    overflow: hidden; 
     padding: 1rem;
     position: fixed;
-    background: rgb(17, 15, 15);
+    background: rgb(17, 15, 15); 
     left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    height: 8vh;
+    top: 0; display: flex;
+    flex-direction: row; margin: 0; 
+    height: 5vh; 
+    width: 100vw;
+    padding-right: 20px; 
+    gap:50%;
+     z-index: 1000; 
+    } 
+.boutton1{
+     display: flex; 
+     width:860px;
+     max-width: 480px;
+     margin: 0; 
+     overflow: auto;
+    background: rgb(17, 11, 11); 
+    float:right; gap: 14px; 
+} 
+a{ 
+    position:inline-block; 
+    margin: 3px; color:white ;
+    border: 3px solid black; 
+    border-radius: 10%; 
+    box-shadow: 10px black; 
+    text-decoration: none; 
+    transition:transform 0.4s ease, 
+    box-shadow 0.1s ease ; 
+} 
+a:hover{
+     box-shadow:2px 2px 2px rgb(195, 45, 255);
+      transform: translateY(2px) translateZ(4px); 
+    } 
+.name{ 
+    background-color: rgb(195, 45, 255); 
+    background-clip:text; color: transparent; 
+} 
+.photo1{ 
+    color: white; 
+    position:relative ;
+    float: right;
     width: 100%;
-    z-index: 1000;
-}
-
-.boutton1 {
-    display: flex;
-    flex-wrap: wrap;      /* permet de revenir à la ligne sur petits écrans */
-    justify-content: flex-end;
-    gap: 14px;
-    background: rgb(17, 11, 11);
-}
-
-/* -------------------- LIENS -------------------- */
-a {
-    display: inline-block; /* correction */
-    margin: 3px;
-    color: white;
-    border: 2px solid rgb(60, 60, 60);
-    border-radius: 10%;
-    padding: 0.4rem 0.8rem;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-a:hover {
-    box-shadow: 2px 2px 8px rgb(195, 45, 255);
-    transform: translateY(-3px) scale(1.05);
-}
-
-.name {
-    background: linear-gradient(to right, rgb(195, 45, 255), rgb(225, 0, 255));
-    background-clip: text;
-    color: transparent;
-}
-
-/* -------------------- SECTION PHOTO -------------------- */
-.photo1 {
-    color: white;
-    position: relative;
-    width: 100%;
-    min-height: 400px;
-    margin: 0;
-    padding: 2rem;
-    display: flex;
+    height: 500px; 
+    margin:0; 
+    padding: 30px; 
+    padding-right: 2px; 
+    overflow: auto; 
+    float: right;
+    display: flex; 
     flex-direction: row;
-    flex-wrap: wrap; /* rend les éléments adaptables */
-    gap: 5%;
-    text-transform: uppercase;
-    justify-content: center;
-}
-
-#photo0 img {
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     gap: 35%;
+    text-transform: uppercase; 
+    } 
+#photo0 img{ 
+    position: relative; 
+    transition-property: width 0.2s ,height 0.2s ,transform 0.2s ease, border-shadow 0.1s ease; 
     width: 100%;
-    max-width: 400px;
-    height: auto;
-}
-
-#photo0 img:hover {
-    box-shadow: 0 0 10px rgb(183, 0, 255);
-    transform: scale(1.1);
-}
-
-/* -------------------- TITRES -------------------- */
-.presentation h1 {
-    position: relative;
-    background: linear-gradient(to right, rgb(183, 0, 255), rgb(225, 0, 255));
-    color: transparent;
-    background-clip: text;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* -------------------- BOUTON APPEL -------------------- */
-span button {
-    margin: 0;
-    height: 35px;
-    padding: 0 20px;
-    border: none;
-    border-radius: 50px;
-    background-color: rgb(183, 0, 255);
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-span button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 10px rgb(183, 0, 255);
-}
-
-/* -------------------- SECTION DELTA -------------------- */
-.delta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
-    background-color: rgb(17, 19, 20);
-    padding: 12px;
-    align-items: center;
-    gap: 20px;
-}
-
-.delta button {
-    border: 2px solid black;
-    border-radius: 50px;
-    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
-}
-
-.delta button:hover {
-    transform: scale(1.1);
-    background: rgba(183, 0, 255, 0.8);
-    box-shadow: 2px 2px 2px black;
-}
-
-/* -------------------- IMAGES GENERALES -------------------- */
-img {
-    display: flex;
-    border: 2px solid black;
-    border-radius: 50%;
-    height: auto;
-    width: 40px;
-    background: rgb(183, 0, 255);
-}
-
-/* -------------------- MEDIA QUERIES -------------------- */
-
-/* Tablettes */
-@media (max-width: 768px) {
-    .boutton {
-        flex-direction: column;
-        height: auto;
-        padding: 0.5rem;
-    }
-
-    .photo1 {
-        flex-direction: column;
+    height:80%; 
+} 
+#photo0 img:hover{ 
+    box-shadow: 2px 2px 2px 2px rgb(183, 0, 255);
+     transform:translatez(150px),translatez(150deg),scaley(1.5); 
+     width: 97%;
+    height:77%; 
+} 
+.presentation h1{
+     position: relative; 
+     background: linear-gradient(to right,rgb(183, 0, 255),rgb(183, 0, 255),rgb(225, 0, 255)); 
+     color: transparent; 
+     background-clip:text ;
+    font-weight: bold; 
+} 
+    /*mise en forme du boutton appel*/ 
+    span button{ 
+        margin: 0;
+        height: 30px;
+        border-radius: 50px;
+        background-color:rgb(183, 0, 255);
+        color: aliceblue; 
+    } 
+.delta{
+        display: flex; 
+        height: 50px;
+        background-color: rgb(17, 19, 20);
+        margin: 0;
+        padding: 12px;
         align-items: center;
-    }
-
-    .icone img {
-        width: 60vw;
-        height: auto;
-    }
-}
-
-/* Téléphones */
-@media (max-width: 480px) {
-    a {
-        font-size: 14px;
-        padding: 0.3rem 0.6rem;
-    }
-
-    .icone img {
-        width: 70vw;
-        height: auto;
-    }
-
-    .photo1 {
-        padding: 1rem;
-    }
+        gap: 40px; 
+        } 
+.delta button{ 
+    border: 2px solid black;
+    border-radius: 50px; 
+    transition: transform 0.2s,bacground 0.2s , box-shadow 0.2s, height 2s, width 2s; 
+} .delta button:hover{
+    transform: translatey(1px); 
+    background:rgba(183, 0, 255, 0.788) ;
+    box-shadow: 2px 2px 2px rgba(183, 0, 255, 0.788); 
+    height:13px ; 
+} 
+img{ 
+    position: relative;
+    display: flex;
+    border: 2px solid black; 
+    border-radius:50% ; 
+    height: 40px; 
+    width: 40px; 
+    background:rgb(183, 0, 255) ; 
 }
