@@ -1,7 +1,9 @@
 body{
+    display: flex;
     overflow: auto;
     background:black;
     margin: 0;
+    width: 100%;
 }
 .icone img{
     border: 2px solid black;
