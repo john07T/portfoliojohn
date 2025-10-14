@@ -28,7 +28,7 @@ body{
 }
 .boutton1{
     display: flex;
-    width:860vw;
+    width:860px;
     margin: 0;
     overflow: auto;
     background: rgb(17, 11, 11);
@@ -110,7 +110,19 @@ span button{
     gap: 40px;
 
 }
-button img{
+.delta button{
+    border: 2px solid black;
+    border-radius: 50px;
+    transition: transform 0.2s, bacground 0.2s , box-shadow 0.2s, height 2s, width 2s;
+
+}
+.delta button:hover{
+    transform:  translatey(1px);
+     background:rgba(183, 0, 255, 0.788) ;
+     box-shadow: 2px 2px 2px rgba(183, 0, 255, 0.788) ; ;
+     height:13px ;
+}
+img{
     position: relative;
     display: flex;
     border: 2px solid black;
@@ -118,18 +130,4 @@ button img{
     height: 40px;
     width: 40px;
     background:rgb(183, 0, 255) ;
-}
-
-/* Styles pour tablette */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-/* Styles pour mobile */
-@media (max-width: 100%) {
-    body {
-        width: 100%;
-    }
 }
