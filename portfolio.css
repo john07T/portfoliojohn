@@ -27,7 +27,7 @@ body{
     } 
 .boutton1{
      display: flex; 
-     width: 760vw;
+     width: 660vw;
      margin: 0; 
      overflow: auto;
     background: rgb(17, 11, 11); 
@@ -70,15 +70,15 @@ a:hover{
 #photo0 img{ 
     position: relative; 
     transition-property: width 0.2s ,height 0.2s ,transform 0.2s ease, border-shadow 0.1s ease; 
-    width: 100%;
-    height:80%; 
+    width: 20vw;
+    height:45vh; 
 } 
 #photo0 img:hover{ 
     box-shadow: 2px 2px 2px 2px rgb(183, 0, 255);
      transform:translatez(150px),translatez(150deg),scaley(1.5); 
-     width: 97%;
-    height:77%; 
-} 
+     width: 19vw;
+    height:44vh; 
+}
 .presentation h1{
      position: relative; 
      background: linear-gradient(to right,rgb(183, 0, 255),rgb(183, 0, 255),rgb(225, 0, 255)); 
@@ -166,4 +166,98 @@ img{
     0%{
         transform:translatey(-40px);
     }
+}
+/* 📱 Smartphones (écrans < 600px) */
+@media (max-width: 600px) {
+  .boutton {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .boutton1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .photo1 {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  #photo0 img {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+
+/* 📲 Tablettes (entre 601px et 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .boutton {
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: 100vw;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .photo1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  #photo0 img {
+    width: 40vw;
+    height: auto;
+  }
+}
+
+
+/* 💻 Petits ordinateurs (entre 901px et 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .photo1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #photo0 img {
+    width: 30vw;
+    height: 40vh;
+  }
+
+  a {
+    font-size: 17px;
+  }
+}
+
+
+/*  Grands écrans (au-dessus de 1200px) */
+@media (min-width: 1201px) {
+  .photo1 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #photo0 img {
+    width: 20vw;
+    height: 45vh;
+  }
 }
