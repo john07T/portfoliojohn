@@ -1,3 +1,4 @@
+/*traitement du corps du conteneur*/
 body{
      overflow: auto;
       background:black; 
@@ -9,6 +10,7 @@ body{
        width:50vw; 
        border-radius: 50%;
 } 
+/*parite de la photo et du texte de degrade*/
 .boutton{ 
     overflow: hidden; 
     padding: 1rem;
@@ -18,20 +20,21 @@ body{
     top: 0; display: flex;
     flex-direction: row; margin: 0; 
     height: 5vh; 
-    width: 100vw;
+    width: 110vw;
     padding-right: 20px; 
     gap:50%;
      z-index: 1000; 
     } 
 .boutton1{
      display: flex; 
-     width:860px;
+     width: 960px;
      max-width: 480px;
      margin: 0; 
      overflow: auto;
     background: rgb(17, 11, 11); 
     float:right; gap: 14px; 
 } 
+/*traitement des liens*/
 a{ 
     position:inline-block; 
     margin: 3px; color:white ;
@@ -39,8 +42,7 @@ a{
     border-radius: 10%; 
     box-shadow: 10px black; 
     text-decoration: none; 
-    transition:transform 0.4s ease, 
-    box-shadow 0.1s ease ; 
+    transition:transform 0.4s ease, box-shadow 0.1s ease ; 
 } 
 a:hover{
      box-shadow:2px 2px 2px rgb(195, 45, 255);
@@ -107,10 +109,9 @@ a:hover{
     border-radius: 50px; 
     transition: transform 0.2s,bacground 0.2s , box-shadow 0.2s, height 2s, width 2s; 
 } .delta button:hover{
-    transform: translatey(1px); 
+    transform: scale(1.5); 
     background:rgba(183, 0, 255, 0.788) ;
-    box-shadow: 2px 2px 2px rgba(183, 0, 255, 0.788); 
-    height:13px ; 
+    box-shadow: 2px 2px 2px black; 
 } 
 img{ 
     position: relative;
@@ -120,4 +121,50 @@ img{
     height: 40px; 
     width: 40px; 
     background:rgb(183, 0, 255) ; 
+}
+/*traitement et animation des carateres present dans la photo*/
+.small{
+    position:relative;
+    background-color: transparent;
+    padding:5px;
+    animation: translation 10s infinite ease-in-out;
+    display: flex; 
+    margin:5px ;
+    z-index: 99;
+}
+@keyframes translation{
+    0%{
+        transform:translatey(50px) ;
+    }
+    40%{
+        transform:translatey(20px);
+    }
+    40%{
+        transform:translatey(50px) ;
+    }
+    0%{
+        transform:translatey(40px);
+    }
+}
+.small1{
+    position:relative;
+    background-color: transparent;
+    animation: transite 10s infinite ease-in-out;
+    display: flex;
+    padding:10px;
+    z-index: 99;
+}
+@keyframes transite{
+    0%{
+        transform:translatey(-50px) ;
+    }
+    40%{
+        transform:translatey(-40px);
+    }
+    40%{
+        transform:translatey(-50px) ;
+    }
+    0%{
+        transform:translatey(-40px);
+    }
 }
