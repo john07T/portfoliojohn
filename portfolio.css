@@ -12,7 +12,7 @@ body{
 } 
 .boutton{
     overflow: hidden;
-    padding: 30px;
+    padding: 1rem;
     position: fixed;
     background: rgb(17, 15, 15);
     left: 0;
@@ -28,7 +28,7 @@ body{
 }
 .boutton1{
     display: flex;
-    width:860px;
+    width:860vw;
     margin: 0;
     overflow: auto;
     background: rgb(17, 11, 11);
