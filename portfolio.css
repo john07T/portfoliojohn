@@ -11,6 +11,7 @@ body{
 
 } 
 .boutton{
+    justify-content: space-between;
     overflow: hidden;
     padding: 1rem;
     position: fixed;
@@ -113,14 +114,13 @@ span button{
 .delta button{
     border: 2px solid black;
     border-radius: 50px;
-    transition: transform 0.2s, bacground 0.2s , box-shadow 0.2s, height 2s, width 2s;
+    transition: transform 0.2s, bacground 0.2s , box-shadow 0.2s, height 0.2s, width 2s;
 
 }
 .delta button:hover{
-    transform:  translatey(1px);
+    transform: scale(1.5);
      background:rgba(183, 0, 255, 0.788) ;
-     box-shadow: 2px 2px 2px rgba(183, 0, 255, 0.788) ; ;
-     height:13px ;
+     box-shadow: 2px 2px 2px black;
 }
 img{
     position: relative;
