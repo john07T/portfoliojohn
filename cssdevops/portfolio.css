@@ -341,22 +341,27 @@ img{
 }
 
 /*traitements  des cartes en colone*/
-.souscontainer{
-  display: flex;
- background: rgba(255, 255, 255, 0.322); 
- border: 2px solid black;
- border-radius: 5%;
- height: 115px;
- transition: transform 0.2;
+.souscontainer {
+    display: flex;
+    background: rgba(255, 255, 255, 0.322); 
+    border: 2px solid black;
+    border-radius: 5%;
+    height: 100px;
+    gap: 20px;
+    width: 100%;
+    transition: height 0.2;
+}
+.explain{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.souscontainer :hover{
+  height: 500px;
 }
 .list{
   padding: 3vw;
   margin: 2vw;
   font-weight: bold;
   font-size: 3vw;
-}
-.explain{
-  position: relative;
-  height: 12px;
-  margin: 1vh;
 }
