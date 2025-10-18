@@ -343,19 +343,20 @@ img{
 /*traitements  des cartes en colone*/
 .souscontainer {
     display: flex;
-    background: rgba(255, 255, 255, 0.322); 
+    background: rgba(17, 14, 14, 0.322); 
     border: 2px solid black;
     border-radius: 5%;
     gap: 20px;
     width: 100%;
-    transition: height 0.2;
+    transition: height 0.2 ,background 0.2;
 }
 .explain{
   position: relative;
   width: 100%;
 }
 .souscontainer :hover{
-  height: 500px;
+  background: linear-gradient(to right,rgba(17, 14, 14, 0.322),rgba(39, 25, 25, 0.322),rgba(49, 22, 56, 0.322));
+  height: 400px;
 }
 .list{
   padding: 3vw;
